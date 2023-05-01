@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.common-btn {
+  @apply inline-block px-4 py-3 bg-blue-600 text-white font-semibold text-sm leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out disabled:!bg-gray-600;
+}
+.common-input {
+  @apply bg-gray-100 focus:bg-white border-2 w-full text-black border-gray-500 rounded-lg px-5 py-2
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.profile-dropdown-select:hover svg {
+  color: rgb(66, 66, 255);
+}
+.profile-dropdown-select:hover span {
+   color: rgb(66, 66, 255);
+}
+.profile-logout-select:hover svg {
+  color: rgb(255, 53, 53);
+}
+.profile-logout-select:hover span {
+   color: rgb(255, 53, 53);
+}
+.user-icons-box {
+  visibility: hidden;
+  transition: linear 0.2s;
+}
+.user-icon:hover .user-icons-box {
+  visibility: visible;
+}
+.react-responsive-modal-modal{
+  border-radius: 10px;
+}
